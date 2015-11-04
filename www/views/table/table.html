@@ -1,10 +1,17 @@
+
+
 <ion-view view-title="learn table">
   <ion-content>
 
-    <p>table of</p>
+
 
     <div class="list">
-        <div class="item" ></div>
+      <label class="item item-input">
+        <span class="input-label">Table of:</span>
+        <input type="number" ng-model="tableOf" ng-change="displayTable()">
+      </label>
+
+      <div class="item" ng-repeat=" items in table " >{{tableOf}} X {{items+1}} = {{tableOf*(items+1)}}</div>
     </div>
 
 
